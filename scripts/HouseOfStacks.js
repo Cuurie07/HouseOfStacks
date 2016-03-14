@@ -470,6 +470,7 @@ function PaintData(data) {
         }
 
         // Add a list item for the product.
+        
         var itemHtml = template.replace('#tags#', tagElement);
         itemHtml = itemHtml.replace('#content#', item["Text"]);
         itemHtml = itemHtml.replace('#percent_width#', barValue);
@@ -655,9 +656,9 @@ function GetMapDataAndPaint(Query) {
             var max = -Infinity;
             CountryData = mapData.map(function (k) { return k.name });
             
-            //if (Query["Country"] && Query["Country"].length > 0) {
+            /*if (Query["Country"] && Query["Country"].length > 0) {
             //    $(".country-select").val(Query["Country"]);
-            //}
+            }*/
 
             $('.country-select').empty();
             $('.country-select').append('<option></option>');
